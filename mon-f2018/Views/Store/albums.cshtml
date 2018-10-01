@@ -1,0 +1,15 @@
+﻿@model IEnumerable<mon_f2018.Models.Album>
+@{
+    ViewBag.Title = "albums";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>albums</h2>
+
+<ul>
+    @foreach (var a in Model)
+    {
+        <li>@a.Title</li>
+    }
+
+</ul>
